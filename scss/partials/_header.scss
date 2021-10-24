@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    height: 80vh;
+
+
+    .first-circle {
+        position: absolute;
+        bottom: 0%;
+        z-index: -1;
+    }
+    .second-circle {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        z-index: -1;
+    }
+
+    .christmas-wrapper {
+        height: max-content;
+    }
+
+    .santa {
+        margin-top: -100px;
+        z-index: 1000;
+        width: 100%;
+    }
+}
+.right-header {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        color: $red;
+        font-size: 72px;
+        font-weight: 100;
+        font-family: "Poppins-Bold";
+    }
+
+    h3 {
+        color: $red;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    p {
+        color: $textColor;
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    a {
+        background-color: $red;
+        width: max-content;
+        padding: 15px 50px;
+        border-radius: 8px;
+        color: $white;
+        text-decoration: none;
+        font-weight: bold;
+        border: 1px solid $red;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $red;
+            color: $red;
+            transition: 0.3s ease;
+        }
+    }
+}

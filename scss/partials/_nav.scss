@@ -1,0 +1,68 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+}
+
+.logo {
+    width: max-content;
+
+h1 {
+    font-family: "Oraqle";
+    font-weight: 100;
+    color: $red;
+    font-size: 4rem;
+    margin: 10px;
+    width: max-content;
+}
+}
+.links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-right: -50px;
+
+    li {
+        padding-left: 50px;
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: $textColor;
+
+            &:hover::after {
+                transform: scale(1, 1);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: $red;
+                width: 75%;
+                left: 0;
+                bottom: -4px;
+                height: 3px;
+                border-radius: 2px;
+                transform: scale(0, 1);
+                transition: all 0.3s ease;
+                transform-origin: 0% 100%;
+               
+            }
+        }
+
+        .active {
+            color: $red;
+
+            &::after {
+                transform: scale(1, 1); 
+            }
+        }
+    }
+}
+
+#hamburger {
+    display: none;
+}

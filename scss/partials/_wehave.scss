@@ -1,4 +1,64 @@
 section.what_we_have {
-    margin: 250px 100px;
-    height: 50vh;
+  padding: 250px 100px;
+  height: 70vh;
+
+  .sliders {
+    margin-top: 50px;
+  }
+
+  .main-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    text-align: center;
+    position: relative;
+    height: 405px;
+    width: 350px !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  .shadow {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .atmosfera {
+    background: url("../../assets/img/atmosfera.png");
+  }
+
+  .uzrast {
+    background: url("../../assets/img/uzrast.png");
+  }
+  .animals {
+    background: url("../../assets/img/zivotinje.png");
+  }
+  .hrana {
+    background: url("../../assets/img/hrana.png");
+  }
+}
+
+.stats {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  color: white;
+  padding-bottom: 40px;
+  visibility: hidden;
+  transition: 0.3s ease;
+  opacity: 0;
+  z-index: 100;
+}
+
+.card:hover .stats {
+  visibility: visible;
+  opacity: 1;
 }

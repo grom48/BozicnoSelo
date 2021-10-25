@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
     <title>Božićno Selo</title>
   </head>
@@ -110,12 +110,57 @@
         </div>
       </header>
       <section class="what_we_have">
-          <h1 class="main-h1">Što nudimo?</h1>
-          
+        <h1 class="main-h1">Što nudimo?</h1>
+        <div class="my-slider sliders">
+          <div class="card atmosfera">
+            <div class="shadow">
+              <h1 class="card-title">Atomsfera</h1>
+              <div class="stats">
+                <p>Neviđena božićna atmosfera</p>
+              </div>
+            </div>
+          </div>
+          <div class="card uzrast">
+            <div class="shadow">
+              <h1 class="card-title">Zabava za sve uzraste</h1>
+            </div>
+          </div>
+          <div class="card hrana">
+            <div class="shadow">
+              <h1 class="card-title">Hrana</h1>
+            </div>
+          </div>
+          <div class="card animals">
+            <div class="shadow">
+              <h1 class="card-title">Životinje</h1>
+            </div>
+          </div>
+          <div class="card animals">
+            <div class="shadow">
+              <h1 class="card-title">Ptice</h1>
+            </div>
+          </div>
+          <div class="card animals">
+            <div class="shadow">
+              <h1 class="card-title">Ptice</h1>
+            </div>
+          </div>
+        </div>
       </section>
+      <section class="about-us" style="height: 100vh"></section>
     </main>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script type="module">
+      let slider = tns({
+        container: ".my-slider",
+        fixedWidth: 400,
+        swipeAngle: false,
+        speed: 400,
+      });
+    </script>
+    <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -37,6 +37,10 @@ body {
   font-family: "Poppins";
 }
 
+main {
+  width: 100%;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,8 +139,23 @@ header {
   height: 80vh;
 }
 
+header .icons {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+
+header .icons a {
+  text-decoration: none;
+}
+
+header .icons img {
+  padding-right: 10px;
+}
+
 header .first-circle {
   position: absolute;
+  left: 0;
   bottom: 0%;
   z-index: -1;
 }
@@ -174,6 +193,7 @@ header .santa {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 10px;
 }
 
 .right-header h1 {
@@ -216,6 +236,82 @@ header .santa {
   color: #EC0000;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 1300px) {
+  header .santa {
+    width: 660px;
+  }
+  .right-header h1 {
+    font-size: 64px;
+  }
+  .right-header h3 {
+    font-size: 40px;
+  }
+  .right-header p {
+    font-size: 16px;
+  }
+  .right-header a {
+    padding: 10px 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .links {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header .santa {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .right-header {
+    margin: auto;
+  }
+  header .santa {
+    width: 700px;
+  }
+  .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .logo {
+    margin-left: 150px;
+  }
+  #hamburger {
+    margin-right: 150px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  nav {
+    background-color: #222222;
+  }
+  #hamburger {
+    margin-top: -30px;
+    margin-right: 100px;
+  }
+  header .santa {
+    width: 600px;
+    margin: auto;
+  }
+  .logo {
+    margin-left: 10px;
+  }
 }
 
 .hamburglar {

@@ -16,3 +16,20 @@ function burgerTime() {
         isClosed = true
     }
 }
+
+const overlay = document.querySelector(".overlay");
+const hamburger = document.querySelector(".ham");
+const ham = document.querySelector(".ham");
+
+trigger.addEventListener("click", () => {
+    if (overlay.style.width === "100%") {
+        overlay.style.width = "0%";
+    } else {
+        overlay.style.width = "100%";
+    }
+});
+
+function closeMenu() {
+    overlay.style.width = "0%";
+    trigger.classList.remove("active")
+}  

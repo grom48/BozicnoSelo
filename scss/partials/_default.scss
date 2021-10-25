@@ -39,3 +39,21 @@ body {
 main {
     width: 100%;
 }
+
+.main-h1 {
+    position: relative;
+    font-size: 48px;
+    color: $naslov;
+    width: max-content;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 70%;
+        background-color: $red;
+        border-radius: 8px;
+        bottom: 0;
+        right: -10px;
+    }
+}

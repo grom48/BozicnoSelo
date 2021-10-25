@@ -41,6 +41,26 @@ main {
   width: 100%;
 }
 
+.main-h1 {
+  position: relative;
+  font-size: 48px;
+  color: #5555;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.main-h1::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  background-color: #EC0000;
+  border-radius: 8px;
+  bottom: 0;
+  right: -10px;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,6 +146,64 @@ nav {
 
 #hamburger {
   display: none;
+}
+
+.container {
+  z-index: 101;
+}
+
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  top: 0;
+  font-family: "Poppins";
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.overlay ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.overlay ul li {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+#hamburger, .logo {
+  z-index: 1000;
 }
 
 header {
@@ -302,7 +380,7 @@ header .santa {
     background-color: #222222;
   }
   #hamburger {
-    margin-top: -30px;
+    margin-top: -40px;
     margin-right: 100px;
   }
   header .santa {
@@ -311,6 +389,54 @@ header .santa {
   }
   .logo {
     margin-left: 10px;
+  }
+  .circles {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  header .santa {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .right-header h1 {
+    font-size: 56px;
+  }
+  .right-header h3 {
+    font-size: 32px;
+  }
+  .right-header p {
+    font-size: 12px;
+  }
+  .right-header a {
+    padding: 8px 30px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .right-header {
+    margin-left: 15px;
+  }
+  .right-header h1 {
+    font-size: 46px;
+  }
+  .right-header h3 {
+    font-size: 28px;
+  }
+  .right-header p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .right-header a {
+    padding: 8px 30px;
+  }
+  .christmas-wrapper {
+    z-index: -1;
+  }
+  .container {
+    z-index: 1000;
   }
 }
 
@@ -882,3 +1008,9 @@ header .santa {
     left: 36px;
   }
 }
+
+section.what_we_have {
+  margin: 250px 100px;
+  height: 50vh;
+}
+/*# sourceMappingURL=main.css.map */

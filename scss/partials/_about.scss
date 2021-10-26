@@ -1,0 +1,40 @@
+section.about-us {
+    margin: 200px 100px;
+
+    .how-started {
+        color: $lightRed;
+        margin-top: 40px;
+    }
+
+    .text-card {
+        background: #e9e9e9;
+        color: $textColor;
+        margin-top: 20px;
+        padding: 30px;
+        border-radius: 10px;
+
+        p {
+            position: relative;
+
+            &::before {
+                content: url("../../assets/img/icons/tree.svg");
+                position: absolute;
+                left: -25px;
+            }
+        }
+    }
+}
+
+.mediji {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    color: $lightRed;
+}
+
+
+@media only screen and (max-width: 769px) {
+    section.about-us {
+        margin: 300px 20px;
+    }
+}

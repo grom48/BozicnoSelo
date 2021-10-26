@@ -43,13 +43,19 @@ section.what_we_have {
   .hrana {
     background: url("../../assets/img/hrana.png");
   }
+  .liteshow {
+    background: url("../../assets/img/lampice.jpg");
+  }
+  .djed {
+    background: url(../../assets/img/santa.jpg);
+  }
 }
 
 .stats {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
   color: white;
   padding-bottom: 40px;
   visibility: hidden;
@@ -61,4 +67,26 @@ section.what_we_have {
 .card:hover .stats {
   visibility: visible;
   opacity: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3px;
+}
+
+@media only screen and (max-width: 769px) {
+  section.what_we_have {
+    padding: 150px 20px 200px 20px;
+  }
+  .main-h1 {
+    font-size: 38px;
+  }
 }

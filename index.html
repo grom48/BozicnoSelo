@@ -123,31 +123,67 @@
           <div class="card uzrast">
             <div class="shadow">
               <h1 class="card-title">Zabava za sve uzraste</h1>
+              <div class="stats">
+                <p>Djeca vrište, odrasli su u čudu</p>
+              </div>
             </div>
           </div>
           <div class="card hrana">
             <div class="shadow">
               <h1 class="card-title">Hrana</h1>
+              <div class="stats">
+                <p>Imat će te priliku probati tradicionalnu hranu</p>
+              </div>
             </div>
           </div>
           <div class="card animals">
             <div class="shadow">
               <h1 class="card-title">Životinje</h1>
+              <div class="stats">
+                <p>Guske, mandarinske patke, mufloni, emue, magarci, ljame, konji...</p>
+              </div>
             </div>
           </div>
-          <div class="card animals">
+          <div class="card liteshow">
             <div class="shadow">
-              <h1 class="card-title">Ptice</h1>
+              <h1 class="card-title">Milijune Lampica</h1>
+              <div class="stats">
+                <p>Ove zime Božićno Selo bit će ukrašeno s točno 3 milijuna lampica</p>
+              </div>
             </div>
           </div>
-          <div class="card animals">
+          <div class="card djed">
             <div class="shadow">
-              <h1 class="card-title">Ptice</h1>
+              <h1 class="card-title">Djed Mraz</h1>
+              <div class="stats">
+                <p>Višegodišnji pobjednik Hrvatske za najboljeg djedicu.</p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="buttons buttons-req">
+            <button class="prev-button">
+              <img src="assets/img/icons/icon-left.svg" alt="left-arrow" />
+            </button>
+            <button class="next-button">
+              <img src="assets/img/icons/icon-right.svg" alt="right-arrow" />
+            </button>
+        </div>
       </section>
-      <section class="about-us" style="height: 100vh"></section>
+      <section class="about-us">
+        <h1 class="main-h1">O nama</h1>
+        <p class="how-started">Kako je sve počelo?</p>
+        <div class="text-card">
+          <p>U Dolcu Gornjem, ali ne onom što odmah vuče na poznatiji Primorski, nego onom istočnijem, put Omiša, podno sjeverne strane Mosora, kada zapuše bura, hladno je, rekli bi na selu, ka u jaceri. Mrznu ruke, mrznu noge, ledeno je i kada se po školski slojevito obučeš. Kraj je to tipični dalmatinski brdski, s višetonskim gromadama od stina, s putevima u brdo koji vode negdje, nigdje. Oni što su se kroz godine u kojima se trbuhom za kruhom, i privučen svjetlima grada polako iseljavao ljudski život, gubili pod slojevima šiblja, grmlja, odrona. I gle čuda, u toj pustopoljini, u malom zbiru napuštenih starih kamenih djedovina, u seocetu bez tekuće vode, kanalizacije, noćne rasvjete, Tihomir Lučić, 38-godišnji vizionar, odlučio je stvoriti Božićno selo.</p>
+        </div>
+        <div class="text-card">
+          <p>Naumio je čovjek ovdje Bogu iza leđa dovesti Božić raskošan kao nigdje u Dalmaciji, onaj zbog kojih će se iz Splita, Šibenika, Dubrovnika potezati put Trnbusa. Pa onda još malo gore, dolje, okolo do Dolca Gornjeg. I on to stvarno zaozbiljno misli. Zapravo on misli ovo: Ovdje, točno tu na ovim ledinama za prvu sljedeću adventsku nedjelju, e ovu prvu iz aktualne 2018. godine, imat ćemo Božićno selo. I to ono s milijun lampica. Točno tako. I to je to, nemam tu šta dodat ni oduzet. Tako san odlučija, a kad ja nešto odlučin, onda povratka nema. A šta je luđe, ja uporniji. Ja se držim rečenice – Tko u čuda viruje, taj čuda i stvara. Zato nema odustajanja – kaže nam Tihomir skroz ozbiljno da ozbiljniji biti ne može.</p>
+        </div>
+        <div class="text-card">
+          <p>Kako najluđe stvari na ovom svijetu na pamet padaju u nekim najčudnijim trenucima, tako se ideja o milijun svića Tihomiru dogodila u trenucima kada je trpio milijun muka. Uhvatila su ga leđa, svitlilo mu je, kaže, pred očima, i dok se noću borio s bolovima, dosjetio se novog projekta. Kaže da je Božićno selo u toj svoj raskoši ugledao upravo u tom trenutku, s tom mišlju zaspao, s njom se probudio i potom je izložio ostatku obitelji.</p>
+        </div>
+        <a class="mediji" href="#">Što drugi kažu o nama?</a>
+      </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
@@ -158,7 +194,23 @@
         fixedWidth: 400,
         swipeAngle: false,
         speed: 400,
+        controls: false,
+        nav: false,
+        mouseDrag:true
       });
+      slider.goTo(0.5)
+      slider.goTo("prev");
+      slider.goTo("next");
+      slider.goTo("first");
+      slider.goTo("last");
+
+      document.querySelector(".prev-button").onclick = function () {
+        slider.goTo("prev");
+      };
+      document.querySelector(".next-button").onclick = function () {
+        slider.goTo("next");
+  
+      };
     </script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>

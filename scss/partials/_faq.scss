@@ -1,0 +1,87 @@
+section.faq {
+    margin: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.accordion {
+  max-width: 900px;
+  margin: 30px auto 50px;
+  padding-top: 30px;
+}
+
+.accordion__item {
+  margin-bottom: 5px;
+}
+
+.accordion__title {
+  background: transparent;
+  padding: 20px;
+  border-bottom: 1px solid $textColor;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.accordion__content p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.accordion__title::after {
+  font-family: 'Font Awesome 5 Free';
+  content:'\f078';
+  color: $red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  height: 1em;
+  transition: transform 0.3s ease-in;
+}
+
+.is-open .accordion__title::after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.accordion__body {
+  border-radius: 5px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.accordion__content {
+  background: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.jaslice {
+    width: 100%;
+    max-width: 800px;
+}
+
+@media only screen and (max-width: 1200px) {
+    section.faq {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .accordion__title {
+        font-size: 16px;
+    }
+    .accordion__content p {
+        font-size: 13px;
+    }
+}

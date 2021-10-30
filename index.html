@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
+    <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
     <title>Božićno Selo</title>
   </head>
   <body>
@@ -195,6 +196,9 @@
           <img src="assets/img/galerija/10.jpg" alt="Slika">
           <img src="assets/img/galerija/11.jpg" alt="Slika">
           <img src="assets/img/galerija/13.jpg" alt="Slika">
+          <img src="assets/img/galerija/13.jpg" alt="Slika">
+          <img src="assets/img/galerija/13.jpg" alt="Slika">
+          <img src="assets/img/galerija/13.jpg" alt="Slika">
         </div>
         <div class="buttons buttons-req">
             <button class="prev-btn">
@@ -205,8 +209,59 @@
             </button>
         </div>
       </section>
+      <section class="faq">
+        <div class="jaslice">
+          <img class="jaslice" src="./assets/img/jaslice.png" alt="Jaslice">
+        </div>
+        <div class="more-queastion">
+          <h1 class="main-h1">Česta pitanja</h1>
+          <div class="accordion">
+            <div class="accordion__item">
+                <div class="accordion__title">Je li moguć pristup osobama s invaliditetom?</div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <p>Moguć je pristup osobama s invaliditetom.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">Radite li nedjeljom i praznicima?</div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <p>Manifestacija je otvorena svakog dana, osim badnjeg dana i stare godine kada smo zatvoreni.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">Koji dan je najbolji za posjet</div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <p>Predlažemo radne dane u tjednu zbog manje gužve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+      <section class="contact-location">
+        <div class="left-contact">
+           <h1 class="main-h1">Kontakt</h1>
+          <form action="sendmail.php" method="post">
+              <input type="text" name="name" value="" placeholder="Name">
+              <input type="email" name="mail" value="" placeholder="Email">
+              <textarea name="message" type="text" placeholder="Message" id="textarea" cols="30" rows="10"></textarea>
+              <button class="contact-button" type="submit" name="submit">Pošalji</button>
+          </form>
+        </div>
+        <div class="whole-map">
+          <div class="map">
+            <h1 class="main-h1">Lokacija</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.2892665932536!2d16.746575815492672!3d43.496300779126926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134abd9f3f05eebd%3A0xf86ffa8bf6392483!2zQm_FvmnEh25vIHNlbG8!5e0!3m2!1shr!2shr!4v1635601184870!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <a class="btn-link" href="https://goo.gl/maps/UWf2xQ4b5dhDwBGA9">Otvori Mapu</a>
+        </div>
+      </section>
     </main>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
     <script type="module">

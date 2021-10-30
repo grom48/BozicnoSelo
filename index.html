@@ -184,6 +184,27 @@
         </div>
         <a class="mediji" href="#">Što drugi kažu o nama?</a>
       </section>
+      <section class="gallery">
+        <h1 class="main-h1">Galerija</h1>
+        <div class="gallery-slider">
+          <img src="assets/img/galerija/4.jpg" alt="Slika">
+          <img src="assets/img/galerija/6.jpg" alt="Slika">
+          <img src="assets/img/galerija/7.jpg" alt="Slika">
+          <img src="assets/img/galerija/8.jpg" alt="Slika">
+          <img src="assets/img/galerija/9.jpg" alt="Slika">
+          <img src="assets/img/galerija/10.jpg" alt="Slika">
+          <img src="assets/img/galerija/11.jpg" alt="Slika">
+          <img src="assets/img/galerija/13.jpg" alt="Slika">
+        </div>
+        <div class="buttons buttons-req">
+            <button class="prev-btn">
+              <img src="assets/img/icons/icon-left.svg" alt="left-arrow" />
+            </button>
+            <button class="next-btn">
+              <img src="assets/img/icons/icon-right.svg" alt="right-arrow" />
+            </button>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
@@ -209,8 +230,28 @@
       };
       document.querySelector(".next-button").onclick = function () {
         slider.goTo("next");
-  
       };
+      let slider2 = tns({
+        container: ".gallery-slider",
+        fixedWidth: 300,
+        items: 5,
+        nav: false,
+        mouseDrag: true,
+        controls: false
+      })
+      slider2.goTo(0.5)
+      slider2.goTo("prev");
+      slider2.goTo("next");
+      slider2.goTo("first");
+      slider2.goTo("last");
+
+      document.querySelector(".prev-btn").onclick = function () {
+        slider2.goTo("prev");
+      };
+      document.querySelector(".next-btn").onclick = function () {
+        slider2.goTo("next");
+      };
+      
     </script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>

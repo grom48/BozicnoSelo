@@ -40,6 +40,10 @@ main {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main-h1 {
     position: relative;
     font-size: 48px;
@@ -61,4 +65,37 @@ main {
 .card-title {
     color: $white;
     padding-top: 10px;
+}
+
+#mybtn {
+  background-color: $red;
+  border: none;
+  border-radius: 15%;
+  color: white;
+  cursor: pointer;
+  font-size: 26px;
+  height: 62px;
+  width: 62px;
+  transition: 0.3s;
+  position: fixed;
+  left: 20px;
+  bottom: 100px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#mybtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#mybtn:hover {
+  transform: scale(1.05);
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
 }

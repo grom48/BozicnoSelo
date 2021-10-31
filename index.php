@@ -17,24 +17,31 @@
   </head>
   <body>
     <main>
+      <button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button> 
       <nav class="container">
         <div class="logo">
           <h1>BS</h1>
         </div>
         <ul class="links">
           <li><a class="active" href="#">Naslovna</a></li>
-          <li><a href="#">O nama</a></li>
-          <li><a href="#">Obavijesti</a></li>
-          <li><a href="#">Što nudimo</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="mediji.html">Mediji</a></li>
+          <li><a href="obavijesti.html">Obavijesti</a></li>
+          <li>
+          <div class="dropdown">
+            <button >Partneri</button>
+            <div class="dropdown-menu">
+              <a href="#">Dekoracije</a>
+              <a href="#">Dekoracije</a>
+              <a href="#">Dekoracije</a>
+            </div>
+          </div>
+          </li>  
         </ul>
         <div class="overlay">
           <ul>
-            <li><a onclick="closeMenu()" href="#">Naslovna</a></li>
-            <li><a onclick="closeMenu()" href="#">O nama</a></li>
-            <li><a onclick="closeMenu()" href="#">Obavijesti</a></li>
-            <li><a onclick="closeMenu()" href="#">Što nudimo</a></li>
-            <li><a onclick="closeMenu()" href="#">Kontakt</a></li>
+            <li><a href="index.php">Naslovna</a></li>
+            <li><a href="mediji.html">Mediji</a></li>
+            <li><a href="obavijesti.html">Obavijesti</a></li>
           </ul>
         </div>
         <div id="hamburger" class="hamburglar">
@@ -92,7 +99,7 @@
             žive jaslice i bezbroj drugih iznenađenja. 🎄🎄🎄
           </p>
           <p>Veselimo se vašem dolasku</p>
-          <a href="#">Kontakt</a>
+          <a href="#contact">Kontakt</a>
         </div>
         <div class="circles">
           <img class="first-circle" src="./assets/img/Ellipse 2.svg" alt="" />
@@ -292,7 +299,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-location">
+      <section id="contact" class="contact-location">
         <div class="left-contact">
           <h1 class="main-h1">Kontakt</h1>
           <form action="sendmail.php" method="post">

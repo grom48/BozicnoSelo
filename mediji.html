@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="./assets/img/BS.svg" type="image/x-icon">
     <title>Mediji o nama</title>
   </head>
   <style>
-      section.about-us {
-          margin-top: 100px;
-      }
-      section.about-us .text-card p::before {
-          display: none;
-      }
-      .clanak {
-          padding-top: 20px;
-          color: #ec0000;
-      }
+    section.about-us {
+      margin-top: 100px;
+    }
+    section.about-us .text-card p::before {
+      display: none;
+    }
+    .clanak {
+      padding-top: 20px;
+      color: #ec0000;
+    }
   </style>
   <body>
     <button onclick="topFunction()" id="mybtn">
@@ -31,14 +32,58 @@
         <li><a href="index.php">Naslovna</a></li>
         <li><a class="active" href="mediji.html">Mediji</a></li>
         <li><a href="obavijesti.html">Obavijesti</a></li>
-        <li><a href="partneri.html">Partneri</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="partners-btn">Partneri</button>
+            <div class="dropdown-menu">
+              <a class="hover-links" href="http://www.zima.hr/intro.php"
+                >Zima dekoracije</a
+              >
+              <a class="hover-links" href="#">Idoneus d.o.o.</a>
+              <a class="hover-links" href="#">Osovina d.o.o.</a>
+              <a class="hover-links" href="#">J.U.M.A. d.o.o.</a>
+              <a class="hover-links" href="http://www.spina.hr/"
+                >Špinaxxl Dugopolje</a
+              >
+              <a class="hover-links" href="#">TPO Križan Dugopolje</a>
+              <a class="hover-links" href="https://www.visitomis.hr/"
+                >TZ Omiš</a
+              >
+              <a class="hover-links" href="https://www.dalmatia.hr/hr"
+                >TZ Splitsko-dalmatinske županije</a
+              >
+            </div>
+          </div>
+        </li>
       </ul>
       <div class="overlay">
         <ul>
-        <li><a href="index.php">Naslovna</a></li>
-        <li><a class="active" href="mediji.html">Mediji</a></li>
-        <li><a href="obavijesti.html">Obavijesti</a></li>
-        <li><a href="partneri.html">Partneri</a></li>
+          <li><a href="index.php">Naslovna</a></li>
+          <li><a class="active" href="mediji.html">Mediji</a></li>
+          <li><a href="obavijesti.html">Obavijesti</a></li>
+          <li>
+            <div class="dropdown">
+              <a>Partneri</a>
+              <div class="dropdown-menu-mobile">
+                <a class="hover-links" href="http://www.zima.hr/intro.php"
+                  >Zima dekoracije</a
+                >
+                <a class="hover-links" href="#">Idoneus d.o.o.</a>
+                <a class="hover-links" href="#">Osovina d.o.o.</a>
+                <a class="hover-links" href="#">J.U.M.A. d.o.o.</a>
+                <a class="hover-links" href="http://www.spina.hr/"
+                  >Špinaxxl Dugopolje</a
+                >
+                <a class="hover-links" href="#">TPO Križan Dugopolje</a>
+                <a class="hover-links" href="https://www.visitomis.hr/"
+                  >TZ Omiš</a
+                >
+                <a class="hover-links" href="https://www.dalmatia.hr/hr"
+                  >TZ Splitsko-dalmatinske županije</a
+                >
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
       <div id="hamburger" class="hamburglar">
@@ -88,108 +133,162 @@
       <p class="how-started">Dalmacija Danas</p>
       <div class="text-card">
         <p>
-            Tko još nije čuo za Božićno selu o Docu Gornjem, točnije zaseoku Nart? Prije tri godine, kada je ovu čaroliju na sjeveroistočnim padinama Mosora, na području drevne Poljičke knežije, pokrenuo Tihomir Lucić, malo je tko vjerovao da ova lokacija može izazvati veći interes ljudi. No ne samo da se on dogodio, nego je Hrvatska turistička zajednica ovaj događaj uvrstila među 10 najznačajnijih na području Hrvatske na godišnjoj razini!
-            <br>
-            Ovogodišnje izdanje Božićnog sela kreće u subotu, 28. studenog u 17 sati, naravno pod uvjetom da Stožer odobri događaj. Za razliku od prethodnih godina, ne planira se spektakularan program otvaranja, posjetitelji će moći uživati u vatrometu i sitnim iznenađenjima. Organizator najavljuje da je detaljno razradio provođenje svih raspoloživih epidemioloških mjera.
-            <br>
-            Posjetili smo Nart koji izgleda baš kao da je u Laponiji, a ne u ljutom dalmatinskom kršu, a cijelo uređeno područje značajno je veće u odnosu na lani.
-            <br>
-            – U odnosu na lani postavili smo dodatnih 700 tisuća lampica, pa ih sada ima 3 milijuna. Također, proširili smo prostor Božićnog sela za oko 5 tisuća kvadrata. Cijeli prostor bogatiji je za dvije prave dalmatinske konobe. One su trebale biti u funkciji, no zbog dobro poznatih epidemioloških okolnosti, još ćemo malo pričekati.
+          Tko još nije čuo za Božićno selu o Docu Gornjem, točnije zaseoku Nart?
+          Prije tri godine, kada je ovu čaroliju na sjeveroistočnim padinama
+          Mosora, na području drevne Poljičke knežije, pokrenuo Tihomir Lucić,
+          malo je tko vjerovao da ova lokacija može izazvati veći interes ljudi.
+          No ne samo da se on dogodio, nego je Hrvatska turistička zajednica
+          ovaj događaj uvrstila među 10 najznačajnijih na području Hrvatske na
+          godišnjoj razini!
+          <br />
+          Ovogodišnje izdanje Božićnog sela kreće u subotu, 28. studenog u 17
+          sati, naravno pod uvjetom da Stožer odobri događaj. Za razliku od
+          prethodnih godina, ne planira se spektakularan program otvaranja,
+          posjetitelji će moći uživati u vatrometu i sitnim iznenađenjima.
+          Organizator najavljuje da je detaljno razradio provođenje svih
+          raspoloživih epidemioloških mjera.
+          <br />
+          Posjetili smo Nart koji izgleda baš kao da je u Laponiji, a ne u
+          ljutom dalmatinskom kršu, a cijelo uređeno područje značajno je veće u
+          odnosu na lani.
+          <br />
+          – U odnosu na lani postavili smo dodatnih 700 tisuća lampica, pa ih
+          sada ima 3 milijuna. Također, proširili smo prostor Božićnog sela za
+          oko 5 tisuća kvadrata. Cijeli prostor bogatiji je za dvije prave
+          dalmatinske konobe. One su trebale biti u funkciji, no zbog dobro
+          poznatih epidemioloških okolnosti, još ćemo malo pričekati.
         </p>
-        <a class="clanak" href="https://www.dalmacijadanas.hr/carolija-ide-dalje-nikad-vece-i-spektakularnije-bozicno-selo-otvara-svoja-vrata-28-studenog">Cijeli Članak</a>
+        <a
+          class="clanak"
+          href="https://www.dalmacijadanas.hr/carolija-ide-dalje-nikad-vece-i-spektakularnije-bozicno-selo-otvara-svoja-vrata-28-studenog"
+          >Cijeli Članak</a
+        >
       </div>
       <p class="how-started">Slobodna Dalmacija</p>
       <div class="text-card">
-            <p>
-                Bager je Lučićima trebao da probije brdo. A probijeno brdo im je trebalo kako bi dobili još nekoliko stotina metara šetnice. Ne znamo točno koliko jer Tiho metar ne upotrebljava, lampice su, naime, njegova mjerna jedinica.
-                <br>
-                – A šta ću kad je tako, sve nan je u lampicama. Za ovu novu šetnicu mogu samo reć da smo, kako bi je osvitlili, potrošili osan kolutova svjetleće gume, a kako svaki kolut ima sto metara, onda i šetnica ima najmanje 800 metara – broji Tiho.
-                <br>
-                Svijetle Lučići od sreće, pogledajte ih samo na fotografijama, kao da su i sami dio koreografije božićne bajke u Docu Gornjem.
-                <br>
-                – Skoro da i jesmo jer nije ovo posao od jednoga dana – govori Tiho.
-                <br>
-            </p>
-            <a class="clanak" href="https://slobodnadalmacija.hr/dalmacija/nasi-reporteri-prvi-su-usli-u-caroliju-u-docu-gornjem-39-ove-smo-godine-cilo-brdo-probili-da-bismo-dobili-bozicno-selo-iz-najlipse-bajke-a-lampice-smo-postavljali-2-5-miseca-ima-ih-dva-milijuna-i-300-tisuca-39-635654">Cijeli Članak</a>
-        </div>
-        <p class="how-started">24 sata</p>
-        <div class="text-card">
         <p>
-            Tihomir Lučić zasukao je rukave te u Dolac Gornji kraj Omiša doveo božićnu čaroliju. Osim 2,3 milijuna lampica i živih jaslica, ima mali zoološki vrt te nudi domaće delicije.
-            <br>
-            Ovaj vikend otvorili su svoja vrata, a posjetitelje čeka čista čarolija na 40.000 četvornih metara. Obasjava je 2,3 milijuna lampica, a kad bi se poredali dužinom, kabeli s lampicama bili bi dugački čak 48 kilometara, što je otprilike i udaljenost od Splita do Božićnog sela.
+          Bager je Lučićima trebao da probije brdo. A probijeno brdo im je
+          trebalo kako bi dobili još nekoliko stotina metara šetnice. Ne znamo
+          točno koliko jer Tiho metar ne upotrebljava, lampice su, naime,
+          njegova mjerna jedinica.
+          <br />
+          – A šta ću kad je tako, sve nan je u lampicama. Za ovu novu šetnicu
+          mogu samo reć da smo, kako bi je osvitlili, potrošili osan kolutova
+          svjetleće gume, a kako svaki kolut ima sto metara, onda i šetnica ima
+          najmanje 800 metara – broji Tiho.
+          <br />
+          Svijetle Lučići od sreće, pogledajte ih samo na fotografijama, kao da
+          su i sami dio koreografije božićne bajke u Docu Gornjem.
+          <br />
+          – Skoro da i jesmo jer nije ovo posao od jednoga dana – govori Tiho.
+          <br />
         </p>
-        <a href="https://www.24sata.hr/news/laponija-u-dalmaciji-bozicnu-caroliju-doveo-je-u-dolac-gornji-662642" class="clanak">Cijeli Članak</a>
+        <a
+          class="clanak"
+          href="https://slobodnadalmacija.hr/dalmacija/nasi-reporteri-prvi-su-usli-u-caroliju-u-docu-gornjem-39-ove-smo-godine-cilo-brdo-probili-da-bismo-dobili-bozicno-selo-iz-najlipse-bajke-a-lampice-smo-postavljali-2-5-miseca-ima-ih-dva-milijuna-i-300-tisuca-39-635654"
+          >Cijeli Članak</a
+        >
       </div>
-        <p class="how-started">Dalmatinski portal</p>
-        <div class="text-card">
+      <p class="how-started">24 sata</p>
+      <div class="text-card">
         <p>
-            Više od 2 milijuna i 300 tisuća svjećica zasvijetlilo je u subotu u 17 sati u Božićnom selu u Gornjem Docu u zaseoku Nart na Mosoru. Čast da pritiskom na tipku upale svjećice pripala je štićenicima Centra Juraj Bonači. Nakon prošlogodišnje uspješne priče, vlasnik imanja Tihomir Lučić, ove je godine odlučio proširiti površinu na kojoj se uz brojne svjetleće ukrase mogu vidjeti i razne domaće životinje poput konja, magaraca, ovaca, svinja, krava…Tihomir Lučić zasukao je rukave te u Dolac Gornji kraj Omiša doveo božićnu čaroliju. Osim 2,3 milijuna lampica i živih jaslica, ima mali zoološki vrt te nudi domaće delicije.
+          Tihomir Lučić zasukao je rukave te u Dolac Gornji kraj Omiša doveo
+          božićnu čaroliju. Osim 2,3 milijuna lampica i živih jaslica, ima mali
+          zoološki vrt te nudi domaće delicije.
+          <br />
+          Ovaj vikend otvorili su svoja vrata, a posjetitelje čeka čista
+          čarolija na 40.000 četvornih metara. Obasjava je 2,3 milijuna lampica,
+          a kad bi se poredali dužinom, kabeli s lampicama bili bi dugački čak
+          48 kilometara, što je otprilike i udaljenost od Splita do Božićnog
+          sela.
         </p>
-        <a href="https://dalmatinskiportal.hr/zivot/otvoreno-bozicno-selo--vise-od-2-milijuna-svjecica-zasvijetlilo-u-gornjem-docu/55021" class="clanak">Cijeli Članak</a>
+        <a
+          href="https://www.24sata.hr/news/laponija-u-dalmaciji-bozicnu-caroliju-doveo-je-u-dolac-gornji-662642"
+          class="clanak"
+          >Cijeli Članak</a
+        >
+      </div>
+      <p class="how-started">Dalmatinski portal</p>
+      <div class="text-card">
+        <p>
+          Više od 2 milijuna i 300 tisuća svjećica zasvijetlilo je u subotu u 17
+          sati u Božićnom selu u Gornjem Docu u zaseoku Nart na Mosoru. Čast da
+          pritiskom na tipku upale svjećice pripala je štićenicima Centra Juraj
+          Bonači. Nakon prošlogodišnje uspješne priče, vlasnik imanja Tihomir
+          Lučić, ove je godine odlučio proširiti površinu na kojoj se uz brojne
+          svjetleće ukrase mogu vidjeti i razne domaće životinje poput konja,
+          magaraca, ovaca, svinja, krava…Tihomir Lučić zasukao je rukave te u
+          Dolac Gornji kraj Omiša doveo božićnu čaroliju. Osim 2,3 milijuna
+          lampica i živih jaslica, ima mali zoološki vrt te nudi domaće
+          delicije.
+        </p>
+        <a
+          href="https://dalmatinskiportal.hr/zivot/otvoreno-bozicno-selo--vise-od-2-milijuna-svjecica-zasvijetlilo-u-gornjem-docu/55021"
+          class="clanak"
+          >Cijeli Članak</a
+        >
       </div>
     </section>
 
-
-      <footer>
-        <div class="upFooter">
-          <canvas id="sky"></canvas>
-          <div class="logo-media">
-            <h1>Božićno selo</h1>
-            <span>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/Bo%C5%BEi%C4%87no-selo-Gornji-Dolac-1174669846030371/"
-              >
-                <img src="./assets/img/icons/face.svg" alt="Facebook Link" />
-              </a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/bozicno.selo/?hl=hr"
-              >
-                <img src="./assets/img/icons/insta.svg" alt="Instagram Link" />
-              </a>
-            </span>
-          </div>
-<!--           <div class="link">
+    <footer>
+      <div class="upFooter">
+        <canvas id="sky"></canvas>
+        <div class="logo-media">
+          <h1>Božićno selo</h1>
+          <span>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/Bo%C5%BEi%C4%87no-selo-Gornji-Dolac-1174669846030371/"
+            >
+              <img src="./assets/img/icons/face.svg" alt="Facebook Link" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/bozicno.selo/?hl=hr"
+            >
+              <img src="./assets/img/icons/insta.svg" alt="Instagram Link" />
+            </a>
+          </span>
+        </div>
+        <!--           <div class="link">
             <li><a href="#">Naslovna</a></li>
             <li><a href="#">Naslovna</a></li>
             <li><a href="#">Naslovna</a></li>
             <li><a href="#">Naslovna</a></li>
           </div> -->
 
-          <div class="about-stats">
-            <div class="stats-links time">
-              <p>Radno vrijeme</p>
-              <h3>14h do 22h</h3>
-            </div>
-            <div class="stats-links address">
-              <p>Adresa</p>
-              <a href="https://goo.gl/maps/Jg7DW1mX8juRumz59"
-                >Nart 10a, 21204 Dugopolje</a
-              >
-            </div>
-            <div class="stats-links mail">
-              <p>Email:</p>
-              <a href="mailto:bozicno.selo@gmail.com">bozicno.selo@gmail.com</a>
-            </div>
-            <div class="stats-links tel">
-              <p>Telefon:</p>
-              <a href="tel:+385 91 60 555 27">+385 91 60 555 27</a>
-            </div>
+        <div class="about-stats">
+          <div class="stats-links time">
+            <p>Radno vrijeme</p>
+            <h3>14h do 22h</h3>
+          </div>
+          <div class="stats-links address">
+            <p>Adresa</p>
+            <a href="https://goo.gl/maps/Jg7DW1mX8juRumz59"
+              >Nart 10a, 21204 Dugopolje</a
+            >
+          </div>
+          <div class="stats-links mail">
+            <p>Email:</p>
+            <a href="mailto:bozicno.selo@gmail.com">bozicno.selo@gmail.com</a>
+          </div>
+          <div class="stats-links tel">
+            <p>Telefon:</p>
+            <a href="tel:+385 91 60 555 27">+385 91 60 555 27</a>
           </div>
         </div>
-        <div class="lowerFooter">
-          <div class="copyright">
-            <img src="./assets/img/santa2.png" alt="Santa" />
-            <p>© Copyright BOŽIĆNO SELO GORNJI DOLAC.</p>
-          </div>
-          <p>
-            Handcrafted by
-            <a href="https://www.instagram.com/viktorbilokapic/">VB</a>
-          </p>
+      </div>
+      <div class="lowerFooter">
+        <div class="copyright">
+          <img src="./assets/img/santa2.png" alt="Santa" />
+          <p>© Copyright BOŽIĆNO SELO GORNJI DOLAC.</p>
         </div>
-      </footer>
+        <p>
+          Handcrafted by
+          <a href="https://www.instagram.com/viktorbilokapic/">VB</a>
+        </p>
+      </div>
+    </footer>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/snow.js"></script>
   </body>

@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/d1bbe2042f.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="./assets/img/BS.svg" type="image/x-icon">
     <title>Božićno Selo</title>
   </head>
   <body>
@@ -28,11 +29,16 @@
           <li><a href="obavijesti.html">Obavijesti</a></li>
           <li>
           <div class="dropdown">
-            <button >Partneri</button>
+            <button class="partners-btn">Partneri</button>
             <div class="dropdown-menu">
-              <a href="#">Dekoracije</a>
-              <a href="#">Dekoracije</a>
-              <a href="#">Dekoracije</a>
+              <a class="hover-links" href="http://www.zima.hr/intro.php">Zima dekoracije</a>
+              <a class="hover-links" href="#">Idoneus d.o.o.</a>
+              <a class="hover-links" href="#">Osovina d.o.o.</a>
+              <a class="hover-links" href="#">J.U.M.A. d.o.o.</a>
+              <a class="hover-links" href="http://www.spina.hr/">Špinaxxl Dugopolje</a>
+              <a class="hover-links" href="#">TPO Križan Dugopolje</a>
+              <a class="hover-links" href="https://www.visitomis.hr/">TZ Omiš</a>
+              <a class="hover-links" href="https://www.dalmatia.hr/hr">TZ Splitsko-dalmatinske županije</a>
             </div>
           </div>
           </li>  
@@ -42,6 +48,21 @@
             <li><a href="index.php">Naslovna</a></li>
             <li><a href="mediji.html">Mediji</a></li>
             <li><a href="obavijesti.html">Obavijesti</a></li>
+          <li>
+          <div class="dropdown">
+            <a>Partneri</a>
+            <div class="dropdown-menu-mobile">
+              <a class="hover-links" href="http://www.zima.hr/intro.php">Zima dekoracije</a>
+              <a class="hover-links" href="#">Idoneus d.o.o.</a>
+              <a class="hover-links" href="#">Osovina d.o.o.</a>
+              <a class="hover-links" href="#">J.U.M.A. d.o.o.</a>
+              <a class="hover-links" href="http://www.spina.hr/">Špinaxxl Dugopolje</a>
+              <a class="hover-links" href="#">TPO Križan Dugopolje</a>
+              <a class="hover-links" href="https://www.visitomis.hr/">TZ Omiš</a>
+              <a class="hover-links" href="https://www.dalmatia.hr/hr">TZ Splitsko-dalmatinske županije</a>
+            </div>
+          </div>
+          </li>  
           </ul>
         </div>
         <div id="hamburger" class="hamburglar">
@@ -102,8 +123,8 @@
           <a href="#contact">Kontakt</a>
         </div>
         <div class="circles">
-          <img class="first-circle" src="./assets/img/Ellipse 2.svg" alt="" />
-          <img class="second-circle" src="./assets/img/Ellipse 3.svg" alt="" />
+          <img class="first-circle" src="./assets/img/Ellipse 2.svg" alt="Circles" />
+          <img class="second-circle" src="./assets/img/Ellipse 3.svg" alt="Circles" />
         </div>
         <div class="icons">
           <a
@@ -237,16 +258,18 @@
       <section class="gallery">
         <h1 class="main-h1">Galerija</h1>
         <div class="gallery-slider">
+          <img src="assets/img/galerija/1.jpeg" alt="Slika" />
           <img src="assets/img/galerija/4.jpg" alt="Slika" />
+          <img src="assets/img/galerija/5.jpeg" alt="Slika" />
           <img src="assets/img/galerija/6.jpg" alt="Slika" />
           <img src="assets/img/galerija/7.jpg" alt="Slika" />
           <img src="assets/img/galerija/8.jpg" alt="Slika" />
+          <img src="assets/img/galerija/3.jpeg" alt="Slika" />
           <img src="assets/img/galerija/9.jpg" alt="Slika" />
+          <img src="assets/img/galerija/2.jpeg" alt="Slika" />
           <img src="assets/img/galerija/10.jpg" alt="Slika" />
           <img src="assets/img/galerija/11.jpg" alt="Slika" />
-          <img src="assets/img/galerija/13.jpg" alt="Slika" />
-          <img src="assets/img/galerija/13.jpg" alt="Slika" />
-          <img src="assets/img/galerija/13.jpg" alt="Slika" />
+          <img src="assets/img/galerija/12.jpeg" alt="Slika" />
           <img src="assets/img/galerija/13.jpg" alt="Slika" />
         </div>
         <div class="buttons buttons-req">
@@ -303,12 +326,12 @@
         <div class="left-contact">
           <h1 class="main-h1">Kontakt</h1>
           <form action="sendmail.php" method="post">
-            <input type="text" name="name" value="" placeholder="Name" />
-            <input type="email" name="mail" value="" placeholder="Email" />
+            <input type="text" name="name" value="" placeholder="Ime" />
+            <input type="email" name="mail" value="" placeholder="Prezime" />
             <textarea
               name="message"
               type="text"
-              placeholder="Message"
+              placeholder="Poruka"
               id="textarea"
               cols="30"
               rows="10"

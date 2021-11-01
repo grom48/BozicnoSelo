@@ -1,70 +1,70 @@
 @font-face {
-    font-family: "Poppins";
-    src: url(../../assets/fonts/Poppins-Regular.ttf);
+  font-family: "Poppins";
+  src: url(../../assets/fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Poppins-Black";
-    src: url(../../assets/fonts/Poppins-Black.ttf);
+  font-family: "Poppins-Black";
+  src: url(../../assets/fonts/Poppins-Black.ttf);
 }
 
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url(../../assets/fonts/Poppins-Bold.ttf);
+  font-family: "Poppins-Bold";
+  src: url(../../assets/fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
-    font-family: "Poppins-Light";
-    src: url(../../assets/fonts/Poppins-Light.ttf);
+  font-family: "Poppins-Light";
+  src: url(../../assets/fonts/Poppins-Light.ttf);
 }
 
 @font-face {
-    font-family: "Oraqle";
-    src: url(../../assets/fonts/Oraqle\%20Script.ttf);
+  font-family: "Oraqle";
+  src: url(../../assets/fonts/Oraqle\%20Script.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins";
 }
 
 main {
-    width: 100%;
+  width: 100%;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .main-h1 {
-    position: relative;
-    font-size: 48px;
-    color: $naslov;
-    width: max-content;
+  position: relative;
+  font-size: 48px;
+  color: $naslov;
+  width: max-content;
 
-    &::after {
-        content: "";
-        position: absolute;
-        height: 3px;
-        width: 70%;
-        background-color: $red;
-        border-radius: 8px;
-        bottom: 0;
-        right: -10px;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 70%;
+    background-color: $red;
+    border-radius: 8px;
+    bottom: 0;
+    right: -10px;
+  }
 }
 
 .card-title {
-    color: $white;
-    padding-top: 10px;
+  color: $white;
+  padding-top: 10px;
 }
 
 #mybtn {
@@ -95,7 +95,63 @@ html {
 }
 
 .dropdown-menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(236, 236, 236);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown-menu-mobile {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hover-links {
+  color: $footerColor !important;
+  transition: 0.3s ease;
+  padding: 5px;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    color: $red !important;
+  }
+}
+
+.partners-btn {
+  background-color: unset;
+  outline: none;
+  border: none;
+  color: $textColor;
+  font-size: 16px;
+  cursor: pointer;
+
+  /*     &::after {
+        content: url("../../assets/img/icons/sort-down.svg"); 
+        color: $red;
+    } */
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.dropdown:hover .dropdown-menu-mobile {
+  opacity: 1 !important;
+  visibility: visible !important;
 }

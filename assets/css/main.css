@@ -108,6 +108,75 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  background-color: #ececec;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+
+.dropdown-menu-mobile {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.hover-links {
+  color: #222 !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  padding: 5px;
+}
+
+.hover-links::after {
+  display: none;
+}
+
+.hover-links:hover {
+  color: #EC0000 !important;
+}
+
+.partners-btn {
+  background-color: unset;
+  outline: none;
+  border: none;
+  color: #737373;
+  font-size: 16px;
+  cursor: pointer;
+  /*     &::after {
+        content: url("../../assets/img/icons/sort-down.svg"); 
+        color: $red;
+    } */
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.dropdown:hover .dropdown-menu-mobile {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 nav {

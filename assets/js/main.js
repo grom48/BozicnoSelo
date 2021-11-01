@@ -1,20 +1,20 @@
-let trigger = document.querySelector("#hamburger")
+let trigger = document.querySelector("#hamburger");
 let isClosed = true;
 
 trigger.addEventListener("click", () => {
-    burgerTime();
-})
+  burgerTime();
+});
 
 function burgerTime() {
-    if (isClosed == true) {
-        trigger.classList.remove("is-closed");
-        trigger.classList.add("is-open")
-        isClosed = false
-    } else {
-        trigger.classList.remove("is-open")
-        trigger.classList.add("is-closed")
-        isClosed = true
-    }
+  if (isClosed == true) {
+    trigger.classList.remove("is-closed");
+    trigger.classList.add("is-open");
+    isClosed = false;
+  } else {
+    trigger.classList.remove("is-open");
+    trigger.classList.add("is-closed");
+    isClosed = true;
+  }
 }
 
 const overlay = document.querySelector(".overlay");
@@ -22,17 +22,17 @@ const hamburger = document.querySelector(".ham");
 const ham = document.querySelector(".ham");
 
 trigger.addEventListener("click", () => {
-    if (overlay.style.width === "100%") {
-        overlay.style.width = "0%";
-    } else {
-        overlay.style.width = "100%";
-    }
+  if (overlay.style.width === "100%") {
+    overlay.style.width = "0%";
+  } else {
+    overlay.style.width = "100%";
+  }
 });
 
 function closeMenu() {
-    overlay.style.width = "0%";
-    trigger.classList.remove("active")
-}  
+  overlay.style.width = "0%";
+  trigger.classList.remove("active");
+}
 
 // !Accordion
 
@@ -72,13 +72,15 @@ const toggle_item = (item) => {
 let mybutton = document.getElementById("mybtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-    mybutton.classList.add("show")
+    mybutton.classList.add("show");
   } else {
-    mybutton.classList.remove("show")
+    mybutton.classList.remove("show");
   }
 }
 
@@ -86,10 +88,9 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-};
+}
 
 function animateIcon() {
   const hamIcon = document.querySelector("#nav-icon2");
-  hamIcon.classList.toggle("open")
+  hamIcon.classList.toggle("open");
 }
-

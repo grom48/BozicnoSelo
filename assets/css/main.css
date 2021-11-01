@@ -1419,82 +1419,23 @@ section.contact-location iframe {
   margin-bottom: 50px;
 }
 
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30%;
-  padding-top: 30px;
-}
-
-form input {
-  margin-bottom: 10px;
-}
-
-form input,
-textarea {
-  margin-bottom: 20px;
-  width: 500px;
+.telephone, .email {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
   border-radius: 10px;
-  outline: none;
-  border: 1px solid #e4e4e4;
-  background: #e4e4e4;
+  margin: 40px 0;
+  color: #5555;
+  position: relative;
 }
 
-input[type="text"],
-input[type="email"] {
-  font-size: 20px;
-  padding-left: 10px;
+.telephone a, .email a {
+  color: #EC0000;
 }
 
-#textarea[type="text"] {
-  font-size: 20px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-form input {
-  height: 80px;
-}
-
-textarea {
-  height: 180px;
-}
-
-form input::-webkit-input-placeholder {
-  padding: 10px 0px 50px 0px;
-}
-
-form input:-ms-input-placeholder {
-  padding: 10px 0px 50px 0px;
-}
-
-form input::-ms-input-placeholder {
-  padding: 10px 0px 50px 0px;
-}
-
-form input::placeholder {
-  padding: 10px 0px 50px 0px;
-}
-
-textarea::-webkit-input-placeholder {
-  padding: 10px 0px 50px 0px;
-}
-
-textarea:-ms-input-placeholder {
-  padding: 10px 0px 50px 0px;
-}
-
-textarea::-ms-input-placeholder {
-  padding: 10px 0px 50px 0px;
-}
-
-textarea::placeholder {
-  padding: 10px 0px 50px 0px;
+.mail2::before, .tel2::before {
+  position: absolute;
+  left: 20%;
 }
 
 .contact-button {

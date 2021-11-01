@@ -10,52 +10,23 @@ section.contact-location {
     }
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding-top: 30px;
-
-  input {
-    margin-bottom: 10px;
-  }
-}
-
-form input,
-textarea {
-  margin-bottom: 20px;
-  width: 500px;
+.telephone, .email {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
   border-radius: 10px;
-  outline: none;
-  border: 1px solid #e4e4e4;
-  background: #e4e4e4;
+  margin: 40px 0;
+  color: $naslov;
+  position: relative;
 }
 
-input[type="text"],
-input[type="email"] {
-  font-size: 20px;
-  padding-left: 10px;
-}
-#textarea[type="text"] {
-  font-size: 20px;
-  padding-left: 10px;
-  padding-top: 10px;
+.telephone a, .email a {
+  color: $red;
 }
 
-form input {
-  height: 80px;
-}
-
-textarea {
-  height: 180px;
-}
-
-form input::placeholder {
-  padding: 10px 0px 50px 0px;
-}
-
-textarea::placeholder {
-  padding: 10px 0px 50px 0px;
+.mail2::before, .tel2::before {
+  position: absolute;
+  left: 20%;
 }
 
 .contact-button {

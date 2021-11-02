@@ -117,6 +117,7 @@ html {
   transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  z-index: 100;
 }
 
 .dropdown-menu-mobile {
